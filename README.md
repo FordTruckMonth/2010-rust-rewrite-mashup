@@ -1,4 +1,40 @@
-# 2010 Rust Rewrite Mashup
+# Rust-Game-Mashup
+
+A Windows-first Rust game-mashup project, based on
+[chasmlol/2010-rust-rewrite-mashup](https://github.com/chasmlol/2010-rust-rewrite-mashup)
+and the [IW4L](https://github.com/vladtrc/iw4L) runtime.
+
+## Project direction
+
+- **Platform:** Windows initially.
+- **Games under investigation:** Team Fortress 2, Left 4 Dead 2 and Half-Life 2 (Source), Half-Life (GoldSrc), and potential Source 2 integrations.
+- **Game assets:** use files from the player's own installed copies.
+- **Skate 3:** excluded from this fork's planned scope.
+
+Valve-game integration is planned research, not an implemented feature. The
+inherited runtime still contains the upstream MW2, Minecraft and Skate 3
+functionality; excluding Skate 3 from the project scope does not yet remove its
+code or setup prompts.
+
+## References and acknowledgements
+
+| Project | Relationship |
+| --- | --- |
+| [vladtrc/iw4L](https://github.com/vladtrc/iw4L) | Upstream Rust MW2 runtime on which the inherited mashup is built. |
+| [chasmlol/2010-rust-rewrite-mashup](https://github.com/chasmlol/2010-rust-rewrite-mashup) | The starting codebase for this project, combining IW4L with Minecraft and Skate 3 integration. |
+| [chasmlol/SkyCraft](https://github.com/chasmlol/SkyCraft) | Reference and inspiration for cross-game integration; listing it here does not imply its code is included. |
+| [chasmlol's GitHub projects](https://github.com/chasmlol) | Further related projects and experiments. |
+
+Original authors retain credit for their work. Existing license and attribution
+notices remain in [LICENSE](LICENSE), [NOTICE](NOTICE), and the relevant
+third-party directories.
+
+## Inherited runtime documentation
+
+The sections below describe the upstream code currently in this repository.
+They are retained as setup and feature references, including the inherited
+Skate 3 functionality, and are not a claim that the planned Valve integrations
+are available.
 
 Modern Warfare 2, Skate 3 and Minecraft in one game, all running on
 [IW4L](https://github.com/vladtrc/iw4L), a from-scratch Rust rewrite of MW2.
